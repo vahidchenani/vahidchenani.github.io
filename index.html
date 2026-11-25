@@ -1,22 +1,22 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101010">
 
   <title>وحید چنانی | Vahid Chenani – بازیگر سینما و تلویزیون</title>
 
-  <meta name="description" content="وب‌سایت معرفی وحید چنانی (Vahid Chenani)، بازیگر سینما و تلویزیون ایران؛ شامل بیوگرافی، آثار هنری و تصاویر.">
-
-  <meta name="keywords" content="وحید چنانی, وحیدچنانی, Vahid Chenani, Vahidchenani, بازیگر وحید چنانی, بیوگرافی وحید چنانی">
-
+  <meta name="description" content="وب‌سایت معرفی وحید چنانی (Vahid Chenani)، بازیگر سینما و تلویزیون ایران؛ بیوگرافی، آثار هنری و تصاویر">
+  <meta name="keywords" content="وحید چنانی, وحیدچنانی, Vahid Chenani, Vahidchenani, عکس وحید چنانی, Vahid Chenani photos, بازیگر وحید چنانی">
   <meta name="author" content="Vahid Chenani">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
 
   <link rel="canonical" href="https://vahidchenani.github.io/">
+
+  <link rel="preload" as="image" href="https://vahidchenani.github.io/vahid-chenani-portrait-1.jpg">
 
   <meta property="og:type" content="profile">
   <meta property="og:title" content="وحید چنانی | Vahid Chenani">
@@ -41,7 +41,10 @@
     "name": "وحید چنانی",
     "alternateName": ["Vahid Chenani", "Vahidchenani"],
     "url": "https://vahidchenani.github.io/",
-    "image": "https://vahidchenani.github.io/vahid-chenani-portrait-1.jpg",
+    "image": [
+      "https://vahidchenani.github.io/vahid-chenani-portrait-1.jpg",
+      "https://vahidchenani.github.io/vahid-chenani-portrait-2.jpg"
+    ],
     "jobTitle": "بازیگر",
     "birthDate": "1993",
     "birthPlace": {
@@ -64,9 +67,13 @@
       --line: #2c2b28;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -107,9 +114,12 @@
       font-weight: 800;
       letter-spacing: .3px;
       font-size: 18px;
+      direction: ltr;
     }
 
-    .brand span { color: var(--gold); }
+    .brand span {
+      color: var(--gold);
+    }
 
     .links {
       display: flex;
@@ -118,7 +128,9 @@
       font-size: 14px;
     }
 
-    .links a:hover { color: var(--gold); }
+    .links a:hover {
+      color: var(--gold);
+    }
 
     .hero {
       min-height: 590px;
@@ -197,9 +209,13 @@
       border-top: 1px solid var(--line);
     }
 
-    .section-head { margin-bottom: 28px; }
+    .section-head {
+      margin-bottom: 28px;
+    }
 
-    .section-head small { color: var(--gold); }
+    .section-head small {
+      color: var(--gold);
+    }
 
     h2 {
       font-size: 28px;
@@ -236,7 +252,9 @@
       color: var(--muted);
     }
 
-    .fact b { font-weight: 600; }
+    .fact b {
+      font-weight: 600;
+    }
 
     .works {
       display: grid;
@@ -265,12 +283,26 @@
       gap: 18px;
     }
 
+    .gallery figure {
+      margin: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
     .gallery img {
+      display: block;
       width: 100%;
       height: 360px;
       object-fit: cover;
-      border-radius: 10px;
-      border: 1px solid var(--line);
+    }
+
+    .gallery figcaption {
+      padding: 12px 15px;
+      color: #d7d2c8;
+      font-size: 14px;
+      text-align: center;
     }
 
     .note {
@@ -304,28 +336,44 @@
         gap: 35px;
       }
 
-      .hero-copy { order: 1; }
+      .hero-copy {
+        order: 1;
+      }
 
       .portrait {
         order: 0;
         max-width: 340px;
       }
 
-      .portrait img { height: 390px; }
+      .portrait img {
+        height: 390px;
+      }
 
-      .about-grid { grid-template-columns: 1fr; }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
 
-      .works { grid-template-columns: repeat(2, 1fr); }
+      .works {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-      .gallery img { height: 250px; }
+      .gallery img {
+        height: 250px;
+      }
     }
 
     @media(max-width:430px) {
-      .links a:nth-child(2) { display: none; }
+      .links a:nth-child(2) {
+        display: none;
+      }
 
-      .works { grid-template-columns: 1fr 1fr; }
+      .works {
+        grid-template-columns: 1fr 1fr;
+      }
 
-      .gallery { grid-template-columns: 1fr; }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -350,15 +398,15 @@
   <div class="wrap hero">
 
     <div class="hero-copy">
-      <div class="eyebrow">ACTOR · CINEMA & TELEVISION</div>
+      <div class="eyebrow">ACTOR · CINEMA &amp; TELEVISION</div>
 
       <h1>وحید چنانی</h1>
 
       <div class="latin">Vahid Chenani</div>
 
       <p class="intro">
-        بازیگر سینما و تلویزیون ایران. در این صفحه می‌توانید معرفی،
-        بخشی از آثار هنری و تصاویر وحید چنانی را ببینید.
+        وحید چنانی (Vahid Chenani)، بازیگر سینما و تلویزیون ایران.
+        در این وب‌سایت می‌توانید معرفی، آثار هنری و تصاویر او را مشاهده کنید.
       </p>
 
       <a class="btn" href="#works">مشاهده آثار هنری</a>
@@ -367,7 +415,9 @@
     <div class="portrait">
       <img
         src="vahid-chenani-portrait-1.jpg"
-        alt="وحید چنانی، بازیگر ایرانی | Vahid Chenani"
+        alt="Vahid Chenani – وحید چنانی، بازیگر سینما و تلویزیون ایران"
+        width="440"
+        height="470"
         fetchpriority="high"
       >
     </div>
@@ -380,21 +430,22 @@
 
     <div class="section-head">
       <small>ABOUT</small>
-      <h2>بیوگرافی وحید چنانی</h2>
+      <h2>بیوگرافی وحید چنانی | Vahid Chenani</h2>
     </div>
 
     <div class="about-grid">
 
       <div class="card">
         <p>
-          وحید چنانی، بازیگر سینما و تلویزیون، متولد سال ۱۳۷۲ در تهران است.
-          او در مجموعه‌ها و آثار تصویری مختلفی حضور داشته است.
-          این صفحه با هدف معرفی فعالیت‌های هنری او تهیه شده است.
+          وحید چنانی، با نام انگلیسی Vahid Chenani،
+          بازیگر سینما و تلویزیون ایران است.
+          این صفحه با هدف معرفی فعالیت‌های هنری،
+          آثار تصویری و تصاویر او تهیه شده است.
         </p>
 
         <p class="note">
-          اطلاعات این بخش بر اساس مشخصاتی است که برای تهیه وب‌سایت ارائه شده
-          و در صورت نیاز می‌توان آن را با زندگی‌نامه تأییدشده و منابع معتبر تکمیل کرد.
+          اطلاعات زندگی‌نامه و آثار باید بر اساس مشخصات تأییدشده
+          تکمیل و به‌روزرسانی شوند.
         </p>
       </div>
 
@@ -444,7 +495,7 @@
 
     <div class="section-head">
       <small>FILMOGRAPHY</small>
-      <h2>آثار هنری</h2>
+      <h2>آثار هنری وحید چنانی</h2>
     </div>
 
     <div class="works">
@@ -457,8 +508,7 @@
     </div>
 
     <p class="note">
-      فهرست آثار بر اساس اطلاعات ارائه‌شده تهیه شده است؛
-      ترتیب، سال تولید و عنوان دقیق نقش‌ها پس از تأیید تکمیل می‌شوند.
+      عناوین آثار و جزئیات نقش‌ها باید با اطلاعات رسمی تطبیق داده شوند.
     </p>
 
   </div>
@@ -468,23 +518,33 @@
   <div class="wrap">
 
     <div class="section-head">
-      <small>GALLERY</small>
-      <h2>گالری تصاویر وحید چنانی</h2>
+      <small>PHOTO GALLERY</small>
+      <h2>عکس‌های وحید چنانی | Vahid Chenani Photos</h2>
     </div>
 
     <div class="gallery">
 
-      <img
-        src="vahid-chenani-portrait-1.jpg"
-        alt="عکس وحید چنانی | Vahid Chenani"
-        loading="lazy"
-      >
+      <figure>
+        <img
+          src="vahid-chenani-portrait-1.jpg"
+          alt="Vahid Chenani – عکس اول وحید چنانی، بازیگر ایرانی"
+          width="600"
+          height="360"
+          loading="lazy"
+        >
+        <figcaption>Vahid Chenani | وحید چنانی</figcaption>
+      </figure>
 
-      <img
-        src="vahid-chenani-portrait-2.jpg"
-        alt="تصویر دوم وحید چنانی، بازیگر سینما و تلویزیون"
-        loading="lazy"
-      >
+      <figure>
+        <img
+          src="vahid-chenani-portrait-2.jpg"
+          alt="Vahid Chenani portrait – عکس دوم وحید چنانی"
+          width="600"
+          height="360"
+          loading="lazy"
+        >
+        <figcaption>Vahid Chenani | Portrait</figcaption>
+      </figure>
 
     </div>
   </div>
@@ -494,20 +554,19 @@
   <div class="wrap">
 
     <div class="section-head">
-      <small>CONTACT & SOCIAL</small>
-      <h2>شبکه‌های اجتماعی</h2>
+      <small>CONTACT &amp; SOCIAL</small>
+      <h2>شبکه‌های اجتماعی وحید چنانی</h2>
     </div>
 
     <div class="card">
-      اینستاگرام:
+      Instagram:
       <a class="insta" href="https://www.instagram.com/vahidchenani_/" target="_blank" rel="noopener">
         @vahidchenani_
       </a>
     </div>
 
     <p class="note">
-      این وب‌سایت یک صفحه معرفی هنری است.
-      برای انتشار عمومی تصاویر و اطلاعات، رضایت صاحب اثر و حقوق عکاسان باید رعایت شود.
+      این وب‌سایت برای معرفی فعالیت‌های هنری وحید چنانی تهیه شده است.
     </p>
 
   </div>
