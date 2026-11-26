@@ -5,25 +5,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>وحید چنانی | بازیگر سینما و تلویزیون | Vahid Chenani</title>
+<title>وحید چنانی | Vahid Chenani | بیوگرافی و فیلم‌شناسی</title>
 
-<meta name="description" content="وب‌سایت معرفی وحید چنانی (Vahid Chenani)، بازیگر ایرانی؛ بیوگرافی، آثار سینمایی و تلویزیونی، تصاویر و اخبار.">
-<meta name="keywords" content="وحید چنانی, Vahid Chenani, بازیگر وحید چنانی, فیلم های وحید چنانی, بیوگرافی وحید چنانی">
+<meta name="description" content="وب‌سایت معرفی وحید چنانی، بازیگر ایرانی متولد تهران با اصالت کردی ایلامی. بیوگرافی، تاریخ تولد، فیلم‌ها، سریال‌ها، آثار نمایش خانگی و گالری ۱۳ تصویر.">
+
+<meta name="keywords" content="وحید چنانی, Vahid Chenani, Vahid Chamani, بیوگرافی وحید چنانی, فیلم های وحید چنانی, بازیگر وحید چنانی">
+
 <meta name="author" content="Vahid Chenani">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#101010">
 
 <link rel="canonical" href="https://vahidchenani.github.io/">
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
 <meta property="og:title" content="وحید چنانی | Vahid Chenani">
-<meta property="og:description" content="صفحه معرفی و آرشیو آثار وحید چنانی">
+<meta property="og:description" content="بیوگرافی، فیلم‌شناسی و گالری تصاویر وحید چنانی">
 <meta property="og:url" content="https://vahidchenani.github.io/">
-<meta property="og:image" content="https://vahidchenani.github.io/vahid-chenani-01.jpg">
+<meta property="og:image" content="https://vahidchenani.github.io/assets/vahid-chenani-01.jpg">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Vahid Chenani | وحید چنانی">
-<meta name="twitter:description" content="Official biography, filmography and photo gallery.">
+<meta name="twitter:description" content="Biography, Filmography and Photo Gallery">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,8 +36,17 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "وحید چنانی",
-  "alternateName": "Vahid Chenani",
-  "jobTitle": "Actor",
+  "alternateName": ["Vahid Chenani", "Vahid Chamani"],
+  "birthDate": "1993-12-19",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "تهران، ایران"
+  },
+  "nationality": {
+    "@type": "Country",
+    "name": "ایران"
+  },
+  "jobTitle": "بازیگر",
   "url": "https://vahidchenani.github.io/",
   "sameAs": [
     "https://www.instagram.com/vahidchenani_/"
@@ -44,6 +55,14 @@
 </script>
 
 <style>
+:root {
+  --gold: #c6a56b;
+  --bg: #101010;
+  --panel: #191919;
+  --text: #f5f5f5;
+  --muted: #aaa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,11 +71,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
-  background: #101010;
-  color: #f4f4f4;
+  background: var(--bg);
+  color: var(--text);
   font-family: 'Vazirmatn', sans-serif;
   line-height: 2;
 }
@@ -70,126 +90,130 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(12,12,12,.96);
+  background: rgba(10,10,10,.97);
   border-bottom: 1px solid #292929;
-  padding: 14px 6%;
+  padding: 13px 6%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 15px;
+  backdrop-filter: blur(12px);
 }
 
 .logo {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
-  letter-spacing: 1px;
+  direction: ltr;
 }
 
 .logo span {
-  color: #c6a56b;
+  color: var(--gold);
 }
 
 nav {
   display: flex;
-  gap: 25px;
+  gap: 22px;
+  flex-wrap: wrap;
   font-size: 13px;
-  color: #ccc;
+  color: #ddd;
 }
 
 nav a:hover {
-  color: #c6a56b;
+  color: var(--gold);
 }
 
 .hero {
-  min-height: 570px;
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 80px 20px;
+  padding: 70px 20px;
   background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.88)),
-    url("vahid-chenani-01.jpg") center 35%/cover no-repeat;
+    linear-gradient(0deg,#101010 0%,transparent 55%),
+    linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.35)),
+    url("assets/vahid-chenani-01.jpg") center 30%/cover no-repeat;
 }
 
 .hero-content {
-  max-width: 750px;
+  max-width: 800px;
 }
 
 .hero h1 {
-  font-size: clamp(38px, 7vw, 68px);
+  font-size: clamp(40px,7vw,76px);
   font-weight: 800;
-  margin-bottom: 8px;
 }
 
 .english {
   direction: ltr;
-  color: #c6a56b;
+  color: var(--gold);
   font-size: 23px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
 }
 
 .hero p {
-  color: #ddd;
-  margin-top: 20px;
-  font-size: 16px;
+  margin-top: 18px;
+  color: #eee;
+  font-size: 17px;
 }
 
-.gold-line {
-  width: 65px;
+.line {
+  width: 75px;
   height: 3px;
-  background: #c6a56b;
-  margin: 20px auto;
+  background: var(--gold);
+  margin: 22px auto;
 }
 
 .button {
   display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 9px 28px;
   margin-top: 25px;
-  padding: 10px 28px;
-  border: 1px solid #c6a56b;
-  color: #c6a56b;
-  border-radius: 4px;
+  border-radius: 5px;
   transition: .3s;
 }
 
 .button:hover {
-  background: #c6a56b;
+  background: var(--gold);
   color: #111;
 }
 
 section {
-  padding: 75px 8%;
-  max-width: 1250px;
+  max-width: 1200px;
   margin: auto;
+  padding: 80px 7%;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 
 .section-title h2 {
-  font-size: 29px;
+  font-size: 28px;
 }
 
 .section-title p {
-  color: #c6a56b;
-  font-size: 13px;
+  color: var(--gold);
   direction: ltr;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
-.about {
+.about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
   gap: 40px;
   align-items: center;
 }
 
-.about img {
+.about-image img {
   width: 100%;
-  max-height: 470px;
+  height: 480px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid #333;
+  border-radius: 9px;
+  border: 1px solid #444;
 }
 
 .about-text h3 {
@@ -200,66 +224,182 @@ section {
 .about-text p {
   color: #c4c4c4;
   font-size: 15px;
+  margin-bottom: 15px;
 }
 
-.films {
+.info {
+  background: var(--panel);
+  border: 1px solid #333;
+  border-radius: 9px;
+  padding: 18px;
+  margin-top: 25px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+}
+
+.info-row:last-child {
+  border-bottom: 0;
+}
+
+.info-row span:first-child {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.works {
+  max-width: none;
   background: #171717;
-  max-width: 100%;
 }
 
-.film-container {
+.works-inner {
   max-width: 1100px;
   margin: auto;
 }
 
-.film-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 17px;
+.category {
+  margin-bottom: 45px;
 }
 
-.film {
-  padding: 23px 15px;
+.category h3 {
+  font-size: 21px;
+  margin-bottom: 20px;
+  border-right: 3px solid var(--gold);
+  padding-right: 13px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+}
+
+.work-card {
   background: #222;
-  border: 1px solid #353535;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  padding: 22px 15px;
   text-align: center;
-  border-radius: 7px;
   transition: .3s;
 }
 
-.film:hover {
-  border-color: #c6a56b;
+.work-card:hover {
+  border-color: var(--gold);
   transform: translateY(-4px);
 }
 
-.film h3 {
+.work-card h4 {
   font-size: 16px;
+  font-weight: 600;
+}
+
+.work-card p {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery-intro {
+  color: var(--muted);
+  margin: -25px 0 30px;
+  font-size: 14px;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 15px;
+  gap: 16px;
 }
 
-.gallery-grid img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: .3s;
+.gallery-item {
+  overflow: hidden;
+  border-radius: 9px;
+  border: 1px solid #333;
   background: #222;
+  cursor: pointer;
+  aspect-ratio: 3 / 4;
 }
 
-.gallery-grid img:hover {
-  transform: scale(1.025);
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .4s;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.06);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(0,0,0,.96);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 15px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-height: 85vh;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+.lightbox button {
+  position: absolute;
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-lightbox {
+  top: 18px;
+  left: 18px;
+}
+
+.prev {
+  right: 15px;
+  top: 50%;
+}
+
+.next {
+  left: 15px;
+  top: 50%;
+}
+
+.photo-count {
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  font-size: 13px;
 }
 
 .social {
-  text-align: center;
+  max-width: none;
   background: #191919;
-  max-width: 100%;
+  text-align: center;
 }
 
 .social p {
@@ -269,12 +409,12 @@ section {
 .instagram {
   display: inline-block;
   direction: ltr;
-  margin-top: 20px;
+  margin-top: 22px;
   padding: 10px 30px;
-  background: #c6a56b;
+  background: var(--gold);
   color: #111;
-  border-radius: 5px;
   font-weight: 700;
+  border-radius: 5px;
 }
 
 footer {
@@ -287,49 +427,48 @@ footer {
 }
 
 footer strong {
-  color: #c6a56b;
+  color: var(--gold);
 }
 
 @media(max-width:750px) {
   header {
     flex-direction: column;
-    gap: 10px;
   }
 
   nav {
-    gap: 15px;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 13px;
     font-size: 12px;
   }
 
   .hero {
-    min-height: 480px;
+    min-height: 500px;
   }
 
-  .about {
+  .about-grid {
     grid-template-columns: 1fr;
   }
 
-  .film-grid {
+  .about-image img {
+    height: 390px;
+  }
+
+  .work-grid {
     grid-template-columns: repeat(2,1fr);
   }
 
   .gallery-grid {
     grid-template-columns: repeat(2,1fr);
-  }
-
-  .gallery-grid img {
-    height: 230px;
+    gap: 10px;
   }
 
   section {
-    padding: 55px 6%;
+    padding: 60px 5%;
   }
 }
 
-@media(max-width:380px) {
-  .film-grid {
+@media(max-width:390px) {
+  .work-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -344,7 +483,7 @@ footer strong {
   <nav>
     <a href="#home">خانه</a>
     <a href="#about">بیوگرافی</a>
-    <a href="#films">آثار</a>
+    <a href="#works">آثار هنری</a>
     <a href="#gallery">گالری تصاویر</a>
     <a href="#contact">ارتباط</a>
   </nav>
@@ -356,117 +495,421 @@ footer strong {
   <div class="hero-content">
     <h1>وحید چنانی</h1>
     <div class="english">VAHID CHENANI</div>
-    <div class="gold-line"></div>
-    <p>بازیگر سینما و تلویزیون</p>
-    <a href="#about" class="button">بیشتر بشناسید</a>
+    <div class="line"></div>
+    <p>بازیگر سینما، تلویزیون و نمایش خانگی</p>
+    <a href="#about" class="button">بیوگرافی و معرفی</a>
   </div>
 </div>
 
 <section id="about">
+
   <div class="section-title">
-    <h2>بیوگرافی</h2>
-    <p>ABOUT VAHID CHENANI</p>
+    <h2>زندگی‌نامه وحید چنانی</h2>
+    <p>BIOGRAPHY</p>
   </div>
 
-  <div class="about">
-    <img src="vahid-chenani-02.jpg"
-         alt="تصویر وحید چنانی بازیگر ایرانی">
+  <div class="about-grid">
+
+    <div class="about-image">
+      <img
+        src="assets/vahid-chenani-02.png"
+        alt="وحید چنانی بازیگر ایرانی"
+        loading="lazy">
+    </div>
 
     <div class="about-text">
+
       <h3>وحید چنانی کیست؟</h3>
+
       <p>
-        وحید چنانی (Vahid Chenani) بازیگر ایرانی است.
-        این صفحه با هدف معرفی فعالیت‌های هنری،
-        آثار سینمایی و تلویزیونی و انتشار تصاویر
-        او ایجاد شده است.
+        وحید چنانی (Vahid Chenani) بازیگر ایرانی،
+        متولد تهران و اصالتاً کردِ ایلام است.
+        او در عرصه بازیگری و فعالیت‌های هنری
+        در سینما، تلویزیون، نمایش خانگی و تئاتر حضور داشته است.
       </p>
+
       <p>
-        در این وب‌سایت تلاش می‌شود اطلاعات زندگی هنری،
-        سوابق بازیگری و آثار وحید چنانی به‌مرور تکمیل
-        و به‌روزرسانی شود.
+        از جمله آثار شاخص او می‌توان به آدم نمی‌شوند،
+        سلمان فارسی، مستوران، هتل بسیار بسیار عجیب،
+        میانبر، میراث، جزایر قناری و دیگر آثار تصویری
+        اشاره کرد.
       </p>
+
+      <div class="info">
+
+        <div class="info-row">
+          <span>نام</span>
+          <span>وحید چنانی</span>
+        </div>
+
+        <div class="info-row">
+          <span>نام انگلیسی</span>
+          <span>Vahid Chenani</span>
+        </div>
+
+        <div class="info-row">
+          <span>تاریخ تولد</span>
+          <span>۲۸ آذر ۱۳۷۲</span>
+        </div>
+
+        <div class="info-row">
+          <span>محل تولد</span>
+          <span>تهران، ایران</span>
+        </div>
+
+        <div class="info-row">
+          <span>اصالت</span>
+          <span>کرد، ایلام</span>
+        </div>
+
+        <div class="info-row">
+          <span>تحصیلات</span>
+          <span>کارشناسی مدیریت صنعتی</span>
+        </div>
+
+        <div class="info-row">
+          <span>ملیت</span>
+          <span>ایرانی</span>
+        </div>
+
+        <div class="info-row">
+          <span>حرفه</span>
+          <span>بازیگر</span>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
 
-<section class="films" id="films">
-  <div class="film-container">
+<div class="works" id="works">
+  <div class="works-inner">
+
     <div class="section-title">
-      <h2>فیلم‌ها و آثار هنری</h2>
+      <h2>فیلم‌شناسی و آثار هنری</h2>
       <p>FILMOGRAPHY</p>
     </div>
 
-    <div class="film-grid">
-      <div class="film"><h3>جزایر قناری</h3></div>
-      <div class="film"><h3>میراث</h3></div>
-      <div class="film"><h3>دیو و ماه پیشونی ۲</h3></div>
-      <div class="film"><h3>آخرین سامورایی</h3></div>
-      <div class="film"><h3>میانبر ۲</h3></div>
-      <div class="film"><h3>میانبر</h3></div>
+    <div class="category">
+
+      <h3>فیلم‌ها و آثار تلویزیونی</h3>
+
+      <div class="work-grid">
+
+        <div class="work-card">
+          <h4>آدم نمی‌شوند</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>سلمان فارسی</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>مستوران</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>هتل بسیار بسیار عجیب</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>میانبر</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>میانبر ۲</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>میراث</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>جزایر قناری</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>آخرین سامورایی</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>دالتون‌ها</h4>
+          <p>پخش از شبکه سه سیما</p>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
 
-<section id="gallery">
+    <div class="category">
+
+      <h3>آثار نمایش خانگی</h3>
+
+      <div class="work-grid">
+
+        <div class="work-card">
+          <h4>دیو و ماه‌پیشونی ۲</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>آقای خنده</h4>
+        </div>
+
+        <div class="work-card">
+          <h4>اسپینجر</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="category">
+
+      <h3>تئاتر و فعالیت‌های هنری</h3>
+
+      <div class="work-grid">
+
+        <div class="work-card">
+          <h4>اجراهای تئاتر</h4>
+          <p>فعالیت‌های نمایشی</p>
+        </div>
+
+        <div class="work-card">
+          <h4>آثار تصویری دیگر</h4>
+          <p>فعالیت‌های هنری</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section id="gallery" class="gallery">
+
   <div class="section-title">
-    <h2>گالری تصاویر</h2>
-    <p>PHOTO GALLERY</p>
+    <h2>گالری تصاویر وحید چنانی</h2>
+    <p>VAHID CHENANI PHOTO GALLERY</p>
   </div>
 
-  <div class="gallery-grid" id="galleryGrid"></div>
+  <p class="gallery-intro">
+    مجموعه تصاویر وحید چنانی
+  </p>
+
+  <div class="gallery-grid" id="galleryGrid">
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-01.jpg"
+           alt="عکس ۱ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-02.png"
+           alt="عکس ۲ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-03.jpg"
+           alt="عکس ۳ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-04.png"
+           alt="عکس ۴ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-05.jpg"
+           alt="عکس ۵ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-06.png"
+           alt="عکس ۶ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-07.jpg"
+           alt="عکس ۷ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-08.png"
+           alt="عکس ۸ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-09.jpg"
+           alt="عکس ۹ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-10.png"
+           alt="عکس ۱۰ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-11.png"
+           alt="عکس ۱۱ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-12.png"
+           alt="عکس ۱۲ وحید چنانی"
+           loading="lazy">
+    </div>
+
+    <div class="gallery-item">
+      <img src="assets/vahid-chenani-13.png"
+           alt="عکس ۱۳ وحید چنانی"
+           loading="lazy">
+    </div>
+
+  </div>
 </section>
+
+<div class="lightbox" id="lightbox">
+
+  <button class="close-lightbox"
+          aria-label="بستن تصویر">×</button>
+
+  <button class="prev"
+          aria-label="تصویر قبلی">›</button>
+
+  <img id="lightboxImage"
+       src=""
+       alt="تصویر بزرگ وحید چنانی">
+
+  <button class="next"
+          aria-label="تصویر بعدی">‹</button>
+
+  <div class="photo-count" id="photoCount"></div>
+
+</div>
 
 <section class="social" id="contact">
+
   <div class="section-title">
     <h2>شبکه‌های اجتماعی</h2>
     <p>FOLLOW VAHID CHENANI</p>
   </div>
 
-  <p>برای مشاهده تصاویر و فعالیت‌های بیشتر وحید چنانی:</p>
+  <p>
+    برای مشاهده تصاویر و فعالیت‌های هنری وحید چنانی
+    صفحه اینستاگرام او را دنبال کنید.
+  </p>
 
   <a class="instagram"
      href="https://www.instagram.com/vahidchenani_/"
      target="_blank"
      rel="noopener noreferrer">
-     Instagram @vahidchenani_
+    Instagram @vahidchenani_
   </a>
+
 </section>
 
 </main>
 
 <footer>
-  <p>© <span id="year"></span> <strong>Vahid Chenani</strong></p>
-  <p>وب‌سایت معرفی و آرشیو آثار وحید چنانی</p>
+
+  <p>
+    © <span id="year"></span>
+    <strong>Vahid Chenani | وحید چنانی</strong>
+  </p>
+
+  <p>وب‌سایت معرفی زندگی و آثار هنری وحید چنانی</p>
+
 </footer>
 
 <script>
+
 document.getElementById("year").textContent =
   new Date().getFullYear();
 
-const gallery = document.getElementById("galleryGrid");
+const images = Array.from(
+  document.querySelectorAll(".gallery-item img")
+);
 
-for (let i = 1; i <= 13; i++) {
-  const img = document.createElement("img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const photoCount = document.getElementById("photoCount");
 
-  const number = String(i).padStart(2, "0");
+let currentIndex = 0;
 
-  img.src = `vahid-chenani-${number}.jpg`;
+function showImage(index) {
 
-  img.alt = `عکس ${i} وحید چنانی - Vahid Chenani`;
+  currentIndex = (index + images.length) % images.length;
 
-  img.loading = "lazy";
+  const selected = images[currentIndex];
 
-  img.onerror = function () {
-    if (!this.dataset.png) {
-      this.dataset.png = "true";
-      this.src = `vahid-chenani-${number}.png`;
-    } else {
-      this.style.display = "none";
-    }
-  };
+  lightboxImage.src = selected.src;
+  lightboxImage.alt = selected.alt;
 
-  gallery.appendChild(img);
+  photoCount.textContent =
+    (currentIndex + 1) + " از " + images.length;
+
+  lightbox.classList.add("active");
 }
+
+images.forEach((img, index) => {
+
+  img.parentElement.addEventListener("click", () => {
+    showImage(index);
+  });
+
+  img.addEventListener("error", () => {
+    img.parentElement.style.display = "none";
+  });
+
+});
+
+document.querySelector(".close-lightbox").onclick = () => {
+  lightbox.classList.remove("active");
+};
+
+document.querySelector(".prev").onclick = () => {
+  showImage(currentIndex - 1);
+};
+
+document.querySelector(".next").onclick = () => {
+  showImage(currentIndex + 1);
+};
+
+lightbox.addEventListener("click", event => {
+
+  if (event.target === lightbox) {
+    lightbox.classList.remove("active");
+  }
+
+});
+
+document.addEventListener("keydown", event => {
+
+  if (!lightbox.classList.contains("active")) return;
+
+  if (event.key === "Escape") {
+    lightbox.classList.remove("active");
+  }
+
+  if (event.key === "ArrowRight") {
+    showImage(currentIndex - 1);
+  }
+
+  if (event.key === "ArrowLeft") {
+    showImage(currentIndex + 1);
+  }
+
+});
+
 </script>
 
 </body>
