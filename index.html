@@ -7,7 +7,7 @@
 
 <title>وحید چنانی | Vahid Chenani | بیوگرافی و فیلم‌شناسی</title>
 
-<meta name="description" content="وب‌سایت معرفی وحید چنانی، بازیگر ایرانی متولد تهران با اصالت کردی ایلامی. بیوگرافی، تاریخ تولد، فیلم‌ها، سریال‌ها، آثار نمایش خانگی و گالری ۱۳ تصویر.">
+<meta name="description" content="وب‌سایت معرفی وحید چنانی، بازیگر ایرانی متولد تهران با اصالت کردی ایلامی. بیوگرافی، تاریخ تولد، فیلم‌ها، سریال‌ها، آثار نمایش خانگی و گالری تصاویر.">
 
 <meta name="keywords" content="وحید چنانی, Vahid Chenani, Vahid Chamani, بیوگرافی وحید چنانی, فیلم های وحید چنانی, بازیگر وحید چنانی">
 
@@ -305,6 +305,75 @@ section {
   margin-top: 5px;
 }
 
+/* بخش اخبار جدید */
+
+.news-section {
+  max-width: none;
+  background: #121212;
+}
+
+.news-inner {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.news-intro {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  margin-top: -25px;
+  margin-bottom: 35px;
+}
+
+.news-card {
+  background: #1b1b1b;
+  border: 1px solid #373737;
+  border-right: 3px solid var(--gold);
+  border-radius: 9px;
+  padding: 25px;
+  margin-bottom: 18px;
+  transition: .3s;
+}
+
+.news-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.news-date {
+  color: var(--gold);
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.news-card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.news-card p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.news-empty {
+  text-align: center;
+  padding: 35px 20px;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  border-radius: 9px;
+  color: #aaa;
+}
+
+.news-empty span {
+  display: block;
+  color: var(--gold);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* پایان بخش اخبار */
+
 .gallery {
   text-align: center;
 }
@@ -484,6 +553,7 @@ footer strong {
     <a href="#home">خانه</a>
     <a href="#about">بیوگرافی</a>
     <a href="#works">آثار هنری</a>
+    <a href="#news">اخبار هنری</a>
     <a href="#gallery">گالری تصاویر</a>
     <a href="#contact">ارتباط</a>
   </nav>
@@ -682,6 +752,36 @@ footer strong {
 
   </div>
 </div>
+
+<!-- اخبار و تازه‌های هنری -->
+
+<section id="news" class="news-section">
+
+  <div class="news-inner">
+
+    <div class="section-title">
+      <h2>اخبار و تازه‌های هنری وحید چنانی</h2>
+      <p>NEWS & UPDATES</p>
+    </div>
+
+    <p class="news-intro">
+      تازه‌ترین اخبار، فعالیت‌ها، پروژه‌ها و رویدادهای هنری وحید چنانی
+    </p>
+
+    <div class="news-empty">
+      <span>✦</span>
+      <h3>اخبار و فعالیت‌های هنری</h3>
+      <p>
+        اخبار رسمی و اطلاعات مربوط به پروژه‌های هنری
+        وحید چنانی پس از انتشار و تأیید، در این بخش قرار خواهند گرفت.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- پایان بخش اخبار -->
 
 <section id="gallery" class="gallery">
 
